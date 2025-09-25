@@ -1,6 +1,7 @@
 # CMSIS-DSP IIR Filter Designer
 
 Una herramienta profesional para el diseño, análisis y exportación de filtros IIR compatibles con **CMSIS-DSP** de ARM. Diseñada específicamente para desarrolladores de sistemas embebidos que trabajan con microcontroladores ARM Cortex-M.
+<img width="1408" height="938" alt="image" src="https://github.com/user-attachments/assets/4b7ad8b9-844d-4a15-9aa4-9a922245005b" />
 
 ---
 
