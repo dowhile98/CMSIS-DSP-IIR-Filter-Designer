@@ -1,0 +1,8 @@
+# GUI y Gráficos
+PySide6>=6.5.0
+matplotlib>=3.5.0
+pyqtgraph>=0.13.0
+
+# Ya existentes
+numpy>=1.21.0
+scipy>=1.7.0
