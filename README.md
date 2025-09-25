@@ -48,3 +48,54 @@ pip install PySide6
 # O instalar todas las dependencias desde requirements.txt
 pip install -r requirements.txt
 
+# Clonar el repositorio
+git clone https://github.com/tu-usuario/cmsis-iir-designer.git
+cd cmsis-iir-designer
+
+# Instalar dependencias
+pip install -r requirements.txt
+
+# Ejecutar la herramienta
+python main.py --help
+
+```
+## 🎮 Uso Rápido
+### Modo Interfaz Gráfica (GUI)
+
+```bash
+# Lanzar la interfaz gráfica
+python main.py --gui
+
+# Con parámetros iniciales específicos
+python main.py --gui --sample-rate 44100 --filter-type elliptic --theme dark
+
+```
+### Modo Línea de Comandos (CLI)
+```bash
+# Filtro paso bajo básico
+python main.py --type lowpass --freq 1000 --order 4 --sample-rate 44100
+
+# Filtro paso banda con gráficas
+python main.py --type bandpass --freq 500 2000 --order 6 --filter-type chebyshev1 --plot
+
+# Exportación avanzada
+python main.py --type highpass --freq 300 --order 5 --format both --data-type q15 --output my_filter.h
+
+
+```
+
+## 📖 Guía de Uso Detallada
+
+### Diseño de Filtros con GUI
+
+- Configuración Básica: frecuencia de muestreo, tipo de filtro y orden
+
+- Parámetros de Frecuencia:
+
+    - Lowpass/Highpass: una frecuencia de corte
+
+    - Bandpass/Bandstop: frecuencias inferior y superior
+
+- Parámetros Avanzados: ripple y atenuación
+
+- Validación y Exportación: gráficas, estabilidad y headers listos
